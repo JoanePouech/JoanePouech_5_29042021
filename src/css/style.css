@@ -1,0 +1,235 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Finger Paint";
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: "Finger Paint";
+  font-size: 3rem;
+}
+
+h3, .typoh3 {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p, button, li {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.typoSubtitle {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.typoLogo {
+  font-family: "Finger Paint";
+  font-size: 2.5rem;
+}
+
+.typoLegende {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  color: #e48a24;
+  position: absolute;
+}
+
+.fab, .fas {
+  padding: 0 0.5rem;
+}
+
+.button {
+  width: 15rem;
+  height: 5rem;
+  color: #fef1e6;
+  background-color: #463c68;
+  border: 2px solid #e48a24;
+}
+.button:hover {
+  color: #463c68;
+  background-color: #e48a24;
+}
+
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: #f3e9f1;
+  border-bottom: 2px solid #e48a24;
+  position: fixed;
+  margin-top: -6rem;
+}
+.header__content {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content__logo {
+  display: flex;
+  align-items: center;
+}
+.header__content__logo > img {
+  height: 5rem;
+}
+.header__content__logo > p {
+  padding-left: 1rem;
+  color: #463c68;
+}
+.header__content__cart {
+  color: #463c68;
+}
+
+.presentationSection {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.presentationSection__left {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.presentationSection__left__block1 {
+  width: 100%;
+  height: 20rem;
+  color: #fef1e6;
+  background-color: #463c68;
+  border: 0.3rem solid #e48a24;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentationSection__left__block1 > p {
+  align-self: flex-end;
+  padding-right: 3rem;
+}
+.presentationSection__left__block2 {
+  width: 50%;
+  height: 20rem;
+  color: #fef1e6;
+  background-color: #463c68;
+  border: 0.3rem solid #e48a24;
+}
+.presentationSection__left__block3 {
+  width: 50%;
+  height: 20rem;
+  color: #fef1e6;
+  background-color: #463c68;
+  border: 0.3rem solid #e48a24;
+}
+.presentationSection__right {
+  width: 33%;
+  height: 40rem;
+  color: #fef1e6;
+  background-color: #463c68;
+  border: 0.3rem solid #e48a24;
+}
+.presentationSection__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productsSection {
+  background-color: #f3e9f1;
+}
+.productsSection__content {
+  max-width: 1200px;
+  margin: auto;
+}
+.productsSection__content__title {
+  padding: 5rem 0;
+  color: #463c68;
+  text-align: center;
+}
+.productsSection__content__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.productsSection__content__list__thumbnail {
+  width: 45%;
+  height: 30rem;
+  margin-bottom: 5rem;
+  background-color: #fef1e6;
+  border-top: 0.2rem solid #e48a24;
+  border-bottom: 0.2rem solid #e48a24;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 2px 2px 10px #9085b8;
+}
+.productsSection__content__list__thumbnail > h3 {
+  width: 100%;
+  text-align: center;
+  color: #463c68;
+  margin-top: 1rem;
+}
+.productsSection__content__list__thumbnail > img {
+  max-width: 55%;
+  max-height: 85%;
+}
+.productsSection__content__list__thumbnail__right {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.productsSection__content__list__thumbnail > a button {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #463c68;
+}
+
+.footer__content {
+  max-width: 1200px;
+  padding: 2rem 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 2.3rem;
+}
+.footer__content__column {
+  text-align: center;
+}
+.footer__content h2 {
+  color: #e48a24;
+  font-size: 1.5rem;
+}
+.footer__content ul {
+  list-style-type: none;
+}
+.footer__content li {
+  color: #fef1e6;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

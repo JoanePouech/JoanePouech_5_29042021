@@ -1,0 +1,5 @@
+@mixin blocks_presentationSection {
+    color: $color-secondary-light;
+    background-color: $color-primary-dark;
+    border: 0.3rem solid $color-secondary-medium;
+}

@@ -1,0 +1,31 @@
+footer {
+    background-color: $color-primary-dark;
+}
+
+.footer__content {
+    max-width: 1200px;
+    padding: 2rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 2.3rem;
+
+    &__column {
+        text-align: center;
+    }
+
+    & h2 {
+        color: $color-secondary-medium;
+        font-size: 1.5rem;
+    }
+     
+    & ul {
+        list-style-type: none;
+    }
+
+    & li {
+        color: $color-secondary-light;
+        font-size: 1.3rem;
+    }
+}
