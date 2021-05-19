@@ -19,6 +19,10 @@
             align-self: center;
             border-collapse: collapse;
 
+            @media screen and (max-width: $break-tablet) {
+                width: 100%;
+            }
+
             & thead, tfoot {
                 color: $color-secondary-light;
                 background-color: $color-primary-dark;
@@ -28,8 +32,7 @@
                 width: 80%;
                 height: 5rem;
                 border-top: 2px solid $color-secondary-medium;
-                border-bottom: 2px solid $color-secondary-medium;
-                
+                border-bottom: 2px solid $color-secondary-medium;                                
             }
         }
     }

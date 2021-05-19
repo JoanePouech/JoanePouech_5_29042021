@@ -16,6 +16,13 @@
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width: $break-tablet) {
+                width: 70%;                
+            }
+            @media screen and (max-width: $break-smartphone) {
+                width: 100%;                
+            }
+
             & label {
                 width: 100%;
                 padding: 1rem 0;
@@ -27,12 +34,20 @@
                     height: 2.5rem;
                     background-color: $color-secondary-light;
                     border: 1px solid $color-primary-dark;
+
+                    @media screen and (max-width: $break-tablet) {
+                        width: 85%;                
+                    }
                 }
             }
             
             & a {
                 margin: 2rem 0;
                 align-self: center;
+
+                @media screen and (max-width: $break-smartphone) {
+                    margin-bottom: 0;                
+                }
             }
         }
     }
