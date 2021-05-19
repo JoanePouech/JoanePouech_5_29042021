@@ -513,14 +513,53 @@ footer {
     width: 85%;
   }
 }
-.formSection__content__form a {
+.formSection__content__form button {
   margin: 2rem 0;
   align-self: center;
 }
 @media screen and (max-width: 600px) {
-  .formSection__content__form a {
+  .formSection__content__form button {
     margin-bottom: 0;
   }
+}
+
+.orderSection {
+  margin-top: 5rem;
+  background-color: #f3e9f1;
+  height: 82vh;
+}
+@media screen and (max-width: 600px) {
+  .orderSection {
+    height: 64vh;
+  }
+}
+.orderSection__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .orderSection__content {
+    padding: 0 1rem;
+  }
+}
+.orderSection__content__title {
+  margin: 5rem 0;
+  color: #463c68;
+}
+.orderSection__content__text {
+  margin: 2rem 0;
+  color: #463c68;
+}
+.orderSection__content__text strong {
+  color: #e48a24;
+}
+.orderSection__content__back {
+  margin: 5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
