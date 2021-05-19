@@ -7,18 +7,18 @@ h1 {
     }
 }
 
-h2 {
+h2, .base_typo2 {
     font-family: "Finger Paint";
     font-size: 3rem;
 }
 
-h3, .base_typoh3 {
+h3, .base_typo3 {
     font-family: "Lato";
     font-weight: 700;
     font-size: 1.5rem;
 }
 
-p, button, li {
+p, button, li, label, .base_typo4 {
     font-family: "Lato";
     font-weight: 400;
     font-size: 1.5rem;

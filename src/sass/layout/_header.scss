@@ -21,17 +21,22 @@
             & > img {
                 height: 5rem;
             }
-            & > p {
+            & p {
                 padding-left: 1rem;
-                color: $color-primary-dark;                
+                color: $color-primary-dark;        
             }
         }
 
         &__cart {
-            color: $color-primary-dark;
-            text-decoration: none;
+            text-decoration: none;            
         }
+    }
+}
 
+.dark_header {
+    background-color: $color-primary-dark;
 
+    & p {
+        color: $color-primary-light;                
     }
 }

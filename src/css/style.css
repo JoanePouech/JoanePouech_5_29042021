@@ -18,18 +18,18 @@ h1 {
   }
 }
 
-h2 {
+h2, .base_typo2 {
   font-family: "Finger Paint";
   font-size: 3rem;
 }
 
-h3, .base_typoh3 {
+h3, .base_typo3 {
   font-family: "Lato";
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-p, button, li {
+p, button, li, label, .base_typo4 {
   font-family: "Lato";
   font-weight: 400;
   font-size: 1.5rem;
@@ -104,13 +104,69 @@ p, button, li {
 .header__content__logo > img {
   height: 5rem;
 }
-.header__content__logo > p {
+.header__content__logo p {
   padding-left: 1rem;
   color: #463c68;
 }
 .header__content__cart {
-  color: #463c68;
   text-decoration: none;
+}
+
+.dark_header {
+  background-color: #463c68;
+}
+.dark_header p {
+  color: #f3e9f1;
+}
+
+footer {
+  background-color: #463c68;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 2.3rem;
+}
+@media screen and (max-width: 600px) {
+  .footer__content {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+}
+.footer__content__column {
+  text-align: center;
+}
+.footer__content h2 {
+  color: #e48a24;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .footer__content h2 {
+    padding-top: 1.5rem;
+  }
+}
+.footer__content ul {
+  list-style-type: none;
+}
+.footer__content li {
+  color: #fef1e6;
+  font-size: 1.3rem;
+}
+.footer__content li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .presentationSection {
@@ -255,54 +311,97 @@ p, button, li {
   color: #463c68;
 }
 
-footer {
-  background-color: #463c68;
+.detailsSection {
+  margin-top: 5rem;
+  background-color: #f3e9f1;
 }
-
-.footer__content {
+.detailsSection__content {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem;
-  padding: 2rem;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  line-height: 2.3rem;
+  flex-direction: column;
 }
 @media screen and (max-width: 600px) {
-  .footer__content {
+  .detailsSection__content {
     padding: 0 1rem;
   }
 }
+.detailsSection__content__back {
+  padding: 2rem 0;
+  text-decoration: none;
+}
+.detailsSection__content__title {
+  padding: 5rem 0;
+  color: #463c68;
+}
+@media screen and (max-width: 768px) {
+  .detailsSection__content__title {
+    padding: 2rem 0;
+  }
+}
+.detailsSection__content__item {
+  padding-bottom: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .detailsSection__content__item {
+    padding-bottom: 8rem;
+  }
+}
 @media screen and (max-width: 600px) {
-  .footer__content {
+  .detailsSection__content__item {
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
 }
-.footer__content__column {
-  text-align: center;
+.detailsSection__content__item__image {
+  width: 60%;
+  max-height: 600px;
 }
-.footer__content h2 {
-  color: #e48a24;
-  font-size: 1.5rem;
+@media screen and (max-width: 768px) {
+  .detailsSection__content__item__image {
+    max-height: 400px;
+  }
 }
 @media screen and (max-width: 600px) {
-  .footer__content h2 {
-    padding-top: 1.5rem;
+  .detailsSection__content__item__image {
+    width: 100%;
+    max-height: 400px;
   }
 }
-.footer__content ul {
-  list-style-type: none;
+.detailsSection__content__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.footer__content li {
-  color: #fef1e6;
-  font-size: 1.3rem;
+@media screen and (max-width: 600px) {
+  .detailsSection__content__item__image img {
+    max-height: 400px;
+  }
 }
-.footer__content li:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.detailsSection__content__item__infos {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  .detailsSection__content__item__infos {
+    width: 100%;
+  }
+  .detailsSection__content__item__infos p, .detailsSection__content__item__infos div, .detailsSection__content__item__infos a {
+    padding: 1rem 0;
+  }
+  .detailsSection__content__item__infos a {
+    align-self: center;
+  }
+}
+.detailsSection__content__item__infos__varnish {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
