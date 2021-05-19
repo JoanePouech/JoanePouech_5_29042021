@@ -28,7 +28,14 @@
         }
 
         &__cart {
-            text-decoration: none;            
+            text-decoration: none;   
+            color: $color-primary-dark;  
+            display: flex;
+            align-items: center;
+            
+            & .fa-shopping-basket {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -36,7 +43,7 @@
 .dark_header {
     background-color: $color-primary-dark;
 
-    & p {
+    & p, .fa-shopping-basket {
         color: $color-primary-light;                
     }
 }

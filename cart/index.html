@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="robots" content="index,follow">
+
+        <title>Orifurniture | Panier</title>
+        <meta name="description" content="panier">
+        <link rel="shortcut icon" type="image/png" href="../assets/img/Logo_Orinoco.png">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../src/css/style.css">
+        <!-- import JS files -->
+    </head>
+
+    <body>
+
+        <header class="header dark_header">
+            <div class="header__content">
+                <a href="../index.html" class="header__content__logo">
+                    <img src="../assets/img/Logo_Orinoco.png" alt="Logo_Orinoco">
+                    <p class="base_typoLogo">Orifurniture</p>
+                </a>
+                <a href="../index.html" class="header__content__cart"> 
+                    <p class="base_typo3">Retour à l'accueil</p>                    
+                </a>
+            </div>
+        </header>
+
+        <section class="cartSection">
+            <div class="cartSection__content">
+                <h1 class="cartSection__content__title base_typo2">Mon panier</h1>
+                <table class="cartSection__content__table">
+                    <thead><tr>
+                        <th>Article</th>
+                        <th>Prix unitaire</th>
+                        <th>Quantité</th>
+                        <th>Prix total</th>
+                    </tr></thead>
+                    <tfoot><tr>
+                        <th colspan="3">Total de la commande</th>
+                        <th>-- €</th>
+                    </tr></tfoot>
+                    <tbody>
+                        <tr><th>Votre panier est vide</th></tr>
+                        <tr><th>Article A</th><th>599 €</th><th><button class="components_cartQuantity">-</button>2<button class="components_cartQuantity">+</button></th><th>1198 €</th></tr>
+                        <tr><th>Article B</th><th>1099 €</th><th>1</th><th>1099 €</th></tr>                         
+                    </tbody>
+                </table>
+            </div>            
+        </section>
+
+        <section class="formSection">
+            <div class="formSection__content">
+                <h2 class="formSection__content__title base_typo2">Mes coordonnées</h2>
+                <form class="formSection__content__form" action="">
+                    <label for="firstName">
+                        Prénom
+                        <input name="firstName" id="firstName" type="text" required>
+                    </label>
+                    <label for="lastName">
+                        Nom
+                        <input name="lastName" id="lastName" type="text" required>
+                    </label>                    
+                    <label for="address">
+                        Adresse
+                        <input name="address" id="address" type="text" required>
+                    </label>                    
+                    <label for="city">
+                        Ville
+                        <input name="city" id="city" type="text" required>
+                    </label>                    
+                    <label for="email">
+                        Email
+                        <input name="email" id="email" type="email" required>
+                    </label>                    
+                    <a href="#"><button class="components_button" id="sendButton">Commander</button></a> <!-- Actualiser le lien -->
+                </form>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="footer__content">
+                <div class="footer__content__column">
+                    <h2>Questions</h2>
+                    <ul>
+                        <li>A propos</li>
+                        <li>FAQ</li>
+                        <li>Conditions générales de vente</li>
+                    </ul>
+                </div>   
+                <div class="footer__content__column"> 
+                    <h2>Contactez-nous</h2>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i>Tel: 01.23.45.67.89</li>
+                        <li><i class="fas fa-envelope"></i>contact@fakemail.com</li>
+                    </ul>
+                </div>
+                <div class="footer__content__column">
+                    <h2>Réseaux sociaux</h2>
+                    <ul>
+                        <li>Facebook<i class="fab fa-facebook-f"></i></li>
+                        <li>Twitter<i class="fab fa-twitter"></i></li>
+                        <li>Instagram<i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

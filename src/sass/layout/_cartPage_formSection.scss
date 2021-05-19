@@ -1,0 +1,39 @@
+.formSection {
+    background-color: $color-primary-light;
+    padding-bottom: 5rem;
+
+    &__content {
+        @include contentSize;
+
+        &__title {
+            padding-bottom: 2rem;
+            color: $color-primary-dark;
+        }
+
+        &__form {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            & label {
+                width: 100%;
+                padding: 1rem 0;
+                display: flex;
+                justify-content: space-between;   
+
+                & input {
+                    width: 90%;
+                    height: 2.5rem;
+                    background-color: $color-secondary-light;
+                    border: 1px solid $color-primary-dark;
+                }
+            }
+            
+            & a {
+                margin: 2rem 0;
+                align-self: center;
+            }
+        }
+    }
+}
