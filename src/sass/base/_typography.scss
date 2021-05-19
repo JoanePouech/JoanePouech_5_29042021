@@ -1,6 +1,10 @@
 h1 {
     font-family: "Finger Paint";
-    font-size: 7rem;
+    font-size: 6rem;
+
+    @media screen and (max-width: $break-smartphone) {
+        font-size: 4.7rem;
+    }
 }
 
 h2 {
@@ -8,7 +12,7 @@ h2 {
     font-size: 3rem;
 }
 
-h3, .typoh3 {
+h3, .base_typoh3 {
     font-family: "Lato";
     font-weight: 700;
     font-size: 1.5rem;
@@ -16,29 +20,24 @@ h3, .typoh3 {
 
 p, button, li {
     font-family: "Lato";
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
 }
 
-.typoSubtitle {
+.base_typoSubtitle {
     font-family: "Lato";
     font-weight: 700;
     font-style: italic;
     font-size: 2rem;
+
+    @media screen and (max-width: $break-smartphone) {
+        font-size: 1.5rem;
+    }
 }
 
-.typoLogo {
+.base_typoLogo {
     font-family: "Finger Paint";
-    font-size: 2.5rem;
-}
-
-.typoLegende {
-    font-family: "Lato";
-    font-weight: 400;
-    font-style: italic;
     font-size: 2rem;
-    color: $color-secondary-medium;
-    position: absolute;
 }
 
 .fab, .fas {

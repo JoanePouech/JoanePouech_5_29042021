@@ -1,15 +1,14 @@
 .header {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     background-color: $color-primary-light;
     border-bottom: 2px solid $color-secondary-medium;
     position: fixed;
-    margin-top: -6rem;
+    margin-top: -5rem;
 
     &__content {
-        max-width: 1200px;
+        @include contentSize;
         height: 100%;
-        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,18 +16,20 @@
         &__logo {             
             display: flex;           
             align-items: center;
-            
+            text-decoration: none;
+
             & > img {
                 height: 5rem;
             }
             & > p {
                 padding-left: 1rem;
-                color: $color-primary-dark;
+                color: $color-primary-dark;                
             }
         }
 
         &__cart {
             color: $color-primary-dark;
+            text-decoration: none;
         }
 
 

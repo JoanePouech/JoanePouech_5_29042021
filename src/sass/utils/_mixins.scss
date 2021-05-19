@@ -3,3 +3,13 @@
     background-color: $color-primary-dark;
     border: 0.3rem solid $color-secondary-medium;
 }
+
+@mixin contentSize {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+
+    @media screen and (max-width: $break-smartphone) {
+        padding: 0 1rem;
+    }
+}

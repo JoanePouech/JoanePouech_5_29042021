@@ -1,18 +1,25 @@
 .presentationSection {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $break-smartphone) {
+        flex-direction: column;
+    }
 
     &__left {
         width: 67%;
         display: flex;
         flex-wrap: wrap;
 
-
-        &__block1 {
+        @media screen and (max-width: $break-smartphone) {
             width: 100%;
-            height: 20rem;
+        }
+
+        &__title {
+            width: 100%;
+            height: 15rem;
             @include blocks_presentationSection;
             display: flex;
             flex-direction: column;
@@ -25,23 +32,22 @@
             }
         }
 
-        &__block2 {
+        &__image {
             width: 50%;
-            height: 20rem;
-            @include blocks_presentationSection;
-        }
-
-        &__block3 {
-            width: 50%;
-            height: 20rem;
+            height: 15rem;
             @include blocks_presentationSection;
         }
     }
 
     &__right {
         width: 33%;
-        height: 40rem;
+        height: 30rem;
         @include blocks_presentationSection;
+
+        @media screen and (max-width: $break-smartphone) {
+            width: 100%;
+            height: 15rem;
+        }
     }
 
     &__img {
