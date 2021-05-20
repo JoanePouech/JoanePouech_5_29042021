@@ -75,6 +75,11 @@ p, button, li, label, th, .base_typo4 {
 }
 
 .components_cartQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.components_cartQuantity_signs {
   padding: 0.5rem;
   margin: 1rem;
   color: #fef1e6;

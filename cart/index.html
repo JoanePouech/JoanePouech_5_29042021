@@ -13,7 +13,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
-        <!-- import JS files -->
+        
+        <script src="../src/js/configUrl.js" defer></script>
+        <script src="../src/js/cartPage_cart.js" defer></script>
     </head>
 
     <body>
@@ -42,12 +44,10 @@
                     </tr></thead>
                     <tfoot><tr>
                         <th colspan="3">Total de la commande</th>
-                        <th>-- €</th>
+                        <th id="totalPrice">-- €</th>
                     </tr></tfoot>
-                    <tbody>
-                        <tr><th colspan="4">Votre panier est vide</th></tr>
-                        <tr><th>Article A</th><th>599 €</th><th><button class="components_cartQuantity">-</button>2<button class="components_cartQuantity">+</button></th><th>1198 €</th></tr>
-                        <tr><th>Article B</th><th>1099 €</th><th>1</th><th>1099 €</th></tr>                         
+                    <tbody id="cartContent">
+                        <!-- Insertion ici des lignes du tableau (cartPage_cart.js)  -->                  
                     </tbody>
                 </table>
             </div>            
