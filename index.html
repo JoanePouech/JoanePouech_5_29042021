@@ -13,7 +13,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="src/css/style.css">
-        <!-- import JS files -->
+
+        <script src="src/js/configUrl.js" defer></script>
+        <script src="src/js/homePage.js" defer></script>
     </head>
 
     <body>
@@ -52,63 +54,8 @@
         <section class="productsSection">
             <div class="productsSection__content">
                 <h2 class="productsSection__content__title">Meubles en chêne</h2>
-                <div class="productsSection__content__list">
-                    <div class="productsSection__content__list__thumbnail">
-                        <h3>Nom meuble 1</h3>
-                        <div class="productsSection__content__list__thumbnail__content">
-                            <img class="productsSection__content__list__thumbnail__content--image" src="./assets/img/image_false_horiz.jpg" alt="meuble 1">
-                            <div class="productsSection__content__list__thumbnail__content--actions"> 
-                                <p>Prix: 1259 €</p>
-                                <a href="./product/index.html"><button class="components_button">Détails</button></a> 
-                                <a href="./cart/index.html"><button class="components_button">Ajouter au panier</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productsSection__content__list__thumbnail">
-                        <h3>Nom meuble 2</h3>
-                        <div class="productsSection__content__list__thumbnail__content">
-                            <img class="productsSection__content__list__thumbnail__content--image" src="./assets/img/image_false_horiz.jpg" alt="meuble 2">
-                            <div class="productsSection__content__list__thumbnail__content--actions"> 
-                                <p>Prix: 649 €</p>
-                                <a href="./product/index.html"><button class="components_button">Détails</button></a>
-                                <a href="./cart/index.html"><button class="components_button">Ajouter au panier</button></a> 
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="productsSection__content__list__thumbnail">
-                        <h3>Nom meuble 3</h3>
-                        <div class="productsSection__content__list__thumbnail__content">
-                            <img class="productsSection__content__list__thumbnail__content--image" src="./assets/img/image_false_vert.jpg" alt="meuble 3">
-                            <div class="productsSection__content__list__thumbnail__content--actions"> 
-                                <p>Prix: 769 €</p>
-                                <a href="./product/index.html"><button class="components_button">Détails</button></a>
-                                <a href="./cart/index.html"><button class="components_button">Ajouter au panier</button></a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productsSection__content__list__thumbnail">
-                        <h3>Nom meuble 4</h3>
-                        <div class="productsSection__content__list__thumbnail__content">
-                            <img class="productsSection__content__list__thumbnail__content--image" src="./assets/img/image_false_vert.jpg" alt="meuble 4">
-                            <div class="productsSection__content__list__thumbnail__content--actions"> 
-                                <p>Prix: 28999 €</p>
-                                <a href="./product/index.html"><button class="components_button">Détails</button></a>
-                                <a href="./cart/index.html"><button class="components_button">Ajouter au panier</button></a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productsSection__content__list__thumbnail">
-                        <h3>Nom meuble 5</h3>
-                        <div class="productsSection__content__list__thumbnail__content">
-                            <img class="productsSection__content__list__thumbnail__content--image" src="./assets/img/image_false_horiz.jpg" alt="meuble 5">
-                            <div class="productsSection__content__list__thumbnail__content--actions"> 
-                                <p>Prix: 999 €</p>
-                                <a href="./product/index.html"><button class="components_button">Détails</button></a>
-                                <a href="./cart/index.html"><button class="components_button">Ajouter au panier</button></a> 
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="productsSection__content__list" id="productsSection__content__list">
+                    <!-- Insertion ici des vignettes produits (homePage.js)-->
                 </div>
             </div>
         </section>
