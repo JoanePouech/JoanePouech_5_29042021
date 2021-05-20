@@ -2,6 +2,8 @@
 
 document.addEventListener ('DOMContentLoaded', (event) => {
     getProductInfos();
+    refreshCartCount (); // fichier cartManager.js
+    addItemToCart(); // fichier cartManager.js
 });
 
 // FONCTION - Récupérer les infos de l'item à afficher (nom, description, image, prix, options de personnalisation)

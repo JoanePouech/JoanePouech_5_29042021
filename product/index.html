@@ -14,8 +14,9 @@
         <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
 
-        <script src="../src/js/configUrl.js"></script>
-        <script src="../src/js/productPage.js"></script>
+        <script src="../src/js/configUrl.js" defer></script>
+        <script src="../src/js/cartManager.js" defer></script>
+        <script src="../src/js/productPage.js" defer></script>
     </head>
 
     <body>
@@ -29,7 +30,7 @@
                 <a href="../cart/index.html" class="header__content__cart"> 
                     <p class="base_typo3">Panier</p>
                     <i class="fas fa-shopping-basket"></i>
-                    <p class="base_typo3">2</p>
+                    <p class="base_typo3" id="cartCount">0</p>
                 </a>
             </div>
         </header>
@@ -49,7 +50,7 @@
                             <label for="productOptions">Vernis disponibles</label>
                             <select name="" id="productOptions"></select>
                         </div>                        
-                        <button class="components_button">Ajouter au panier</button>
+                        <button class="components_button js_cartButton">Ajouter au panier</button>
                     </div>
                 </div>
                 

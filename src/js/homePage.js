@@ -1,12 +1,19 @@
 /* Page 1 - Accueil */
 
 document.addEventListener ('DOMContentLoaded', (event) => {
-    createThumbnails();
+    start();
 });
+
+// FONCTION - Lancer l'éxécution et attendre le résultat de createThumbnails() avant de lancer addItemToCart()
+async function start () {
+    await createThumbnails ();
+    refreshCartCount (); // fichier cartManager.js
+    addItemToCart (); // fichier cartManager.js
+}
 
 // FONCTION - Afficher une vignette pour chaque item avec son id, son nom, son image, son prix
 function createThumbnails () {
-    fetch (host)
+    let finish = fetch (host)
         .then (function (result) {
             if (result.ok) {
                 return result.json();
@@ -22,7 +29,7 @@ function createThumbnails () {
                             <div class="productsSection__content__list__thumbnail__content--actions" id="${allItems[i]._id}"> 
                                 <p>Prix: ${allItems[i].price} €</p>
                                 <a href="./product/index.html?${allItems[i]._id}"><button class="components_button">Détails</button></a> 
-                                <button class="components_button">Ajouter au panier</button>
+                                <button class="components_button js_cartButton">Ajouter au panier</button>
                             </div>
                         </div>
                     </div>`;     
@@ -31,4 +38,5 @@ function createThumbnails () {
         .catch (function(err) {
             console.error(err);
         });
+    return finish;
 }
