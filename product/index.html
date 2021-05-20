@@ -13,7 +13,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
-        <!-- import JS files -->
+
+        <script src="../src/js/configUrl.js"></script>
+        <script src="../src/js/productPage.js"></script>
     </head>
 
     <body>
@@ -35,19 +37,19 @@
         <section class="detailsSection">
             <div class="detailsSection__content">
                 <a class="detailsSection__content__back base_typo4" href="../index.html"><i class="fas fa-chevron-left"></i>Retour à la liste des articles</a>
-                <h1 class="detailsSection__content__title base_typo2">Nom du meuble</h1>
+                <h1 class="detailsSection__content__title base_typo2" id="productName">Nom du meuble</h1>
                 <div class="detailsSection__content__item">
                     <div class="detailsSection__content__item__image">
-                        <img src="../assets/img/image_false_horiz.jpg" alt="détail du meuble">
+                        <img id="productImage" src="" alt="détail du meuble">
                     </div>                    
-                    <div class="detailsSection__content__item__infos">
-                        <p>89900 €</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="detailsSection__content__item__infos" id="productId">
+                        <p id="productPrice">89900 €</p>
+                        <p id="productDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="detailsSection__content__item__infos__varnish">
-                            <label for="varnish">Vernis disponibles</label>
-                            <select name="" id="varnish"></select>
+                            <label for="productOptions">Vernis disponibles</label>
+                            <select name="" id="productOptions"></select>
                         </div>                        
-                        <a href="../order/index.html"><button class="components_button">Ajouter au panier</button></a> <!-- Actualiser le lien -->
+                        <button class="components_button">Ajouter au panier</button>
                     </div>
                 </div>
                 
