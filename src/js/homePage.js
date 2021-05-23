@@ -14,12 +14,12 @@ async function start () {
 // FONCTION - Afficher une vignette pour chaque item avec son id, son nom, son image, son prix
 function createThumbnails () {
     let finish = fetch (host)
-        .then (function (result) {
+        .then ((result) => {
             if (result.ok) {
                 return result.json();
             }
         })
-        .then (function (allItems) {
+        .then ((allItems) => {
             for (let i in allItems) {
                 document.getElementById("productsSection__content__list").innerHTML +=  `
                     <div class="productsSection__content__list__thumbnail">                
@@ -35,8 +35,6 @@ function createThumbnails () {
                     </div>`;     
             }
         })
-        .catch (function(err) {
-            console.error(err);
-        });
+        .catch ((err) => {console.error(err);});
     return finish;
 }

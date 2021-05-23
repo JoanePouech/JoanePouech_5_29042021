@@ -38,6 +38,15 @@
                     @media screen and (max-width: $break-tablet) {
                         width: 85%;                
                     }
+
+                    &:focus {
+                        outline: 1px solid $color-secondary-medium;
+                        border: none;
+                    }
+
+                    &[class="invalid"] {
+                        background-color: #f705156e;
+                    }
                 }
             }
             

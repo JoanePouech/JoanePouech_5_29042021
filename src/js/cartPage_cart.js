@@ -37,17 +37,15 @@ async function printCart () {
 // FONCTION - Récuperer les informations d'un produit à partir de son id, renvoie un objet CartProduct
 function getItemInfos (id) {
     let cartItem = fetch (host + "/" + id)
-        .then (function (result) {
+        .then ((result) => {
             if (result.ok) {
                 return result.json();
             }
         })
-        .then (function (item) {
+        .then ((item) => {
             return new CartProduct(item._id,item.name,item.price,1);             
         })
-        .catch (function(err) {
-            console.error(err);
-        });
+        .catch ((err) => {console.error(err);});
     return cartItem;    
 };
 
@@ -82,14 +80,14 @@ function createTable (cartTable) {
     // Création d'une ligne par item
     for (let i in cartTable) {
         document.getElementById("cartContent").innerHTML += `<tr id="${i}.line">
-                                                                <th>${cartTable[i].name}</th>
-                                                                <th>${cartTable[i].price} €</th>
-                                                                <th class="components_cartQuantity">
+                                                                <td>${cartTable[i].name}</td>
+                                                                <td>${cartTable[i].price} €</td>
+                                                                <td class="components_cartQuantity">
                                                                     <button class="components_cartQuantity_signs removeItem" id="${i}.add">-</button>
                                                                     <p id="${i}.quantity">${cartTable[i].quantity}</p>
                                                                     <button class="components_cartQuantity_signs addItem" id="${i}.remove">+</button>
-                                                                </th>
-                                                                <th id="${i}.itemPrice">${cartTable[i].price * cartTable[i].quantity} €</th>
+                                                                </td>
+                                                                <td id="${i}.itemPrice">${cartTable[i].price * cartTable[i].quantity} €</td>
                                                             </tr>`;
         totalPrice += cartTable[i].price * cartTable[i].quantity;
     }
@@ -99,13 +97,13 @@ function createTable (cartTable) {
 
 // FONCTION - Afficher une ligne "panier vide"
 function emptyCart() {
-    document.getElementById("cartContent").innerHTML += `<tr><th colspan="4">Votre panier est vide</th></tr>`
+    document.getElementById("cartContent").innerHTML += `<tr><td colspan="4">Votre panier est vide</td></tr>`
 }
 
 // FONCTION - Ajouter un item au panier
 function addItem () {
     for (let element of document.getElementsByClassName("addItem")) {
-        element.addEventListener ('click', function() {
+        element.addEventListener ('click', () => {
             let index = element.getAttribute("id")[0];
             // Mise à jour de la ligne du tableau
             cartTable[index].quantity ++;
@@ -124,7 +122,7 @@ function addItem () {
 // FONCTION - Supprimer un item du panier
 function removeItem () {
     for (let element of document.getElementsByClassName("removeItem")) {
-        element.addEventListener ('click', function() {
+        element.addEventListener ('click', () => {
             let index = element.getAttribute("id")[0];
             // Mise à jour de la ligne du tableau
             cartTable[index].quantity --;

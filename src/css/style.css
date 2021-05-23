@@ -29,7 +29,7 @@ h3, .base_typo3 {
   font-size: 1.5rem;
 }
 
-p, button, li, label, th, .base_typo4 {
+p, button, li, label, th, td, .base_typo4 {
   font-family: "Lato";
   font-weight: 400;
   font-size: 1.5rem;
@@ -140,6 +140,7 @@ p, button, li, label, th, .base_typo4 {
 
 footer {
   background-color: #463c68;
+  border-top: 2px solid #e48a24;
 }
 
 .footer__content {
@@ -466,6 +467,9 @@ footer {
   border-top: 2px solid #e48a24;
   border-bottom: 2px solid #e48a24;
 }
+.cartSection__content__table td {
+  text-align: center;
+}
 
 .formSection {
   background-color: #f3e9f1;
@@ -517,6 +521,13 @@ footer {
   .formSection__content__form label input {
     width: 85%;
   }
+}
+.formSection__content__form label input:focus {
+  outline: 1px solid #e48a24;
+  border: none;
+}
+.formSection__content__form label input[class=invalid] {
+  background-color: #f705156e;
 }
 .formSection__content__form button {
   margin: 2rem 0;

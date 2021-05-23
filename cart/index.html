@@ -11,11 +11,12 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
         
         <script src="../src/js/configUrl.js" defer></script>
         <script src="../src/js/cartPage_cart.js" defer></script>
+        <script src="../src/js/cartPage_form.js" defer></script>
     </head>
 
     <body>
@@ -56,26 +57,26 @@
         <section class="formSection">
             <div class="formSection__content">
                 <h2 class="formSection__content__title base_typo2">Mes coordonnées</h2>
-                <form class="formSection__content__form" action="../order/index.html">
+                <form class="formSection__content__form" id="form" action="../order/index.html">
                     <label for="firstName">
                         Prénom
-                        <input name="firstName" id="firstName" type="text" required>
+                        <input name="firstName" id="firstName" type="text" required autocomplete="off">
                     </label>
                     <label for="lastName">
                         Nom
-                        <input name="lastName" id="lastName" type="text" required>
+                        <input name="lastName" id="lastName" type="text" autocomplete="off"> 
                     </label>                    
                     <label for="address">
                         Adresse
-                        <input name="address" id="address" type="text" required>
+                        <input name="address" id="address" type="text" autocomplete="off">
                     </label>                    
                     <label for="city">
                         Ville
-                        <input name="city" id="city" type="text" required>
+                        <input name="city" id="city" type="text" autocomplete="off">
                     </label>                    
                     <label for="email">
                         Email
-                        <input name="email" id="email" type="email" required>
+                        <input name="email" id="email" type="email" autocomplete="off">
                     </label>                    
                     <button class="components_button" id="sendButton">Commander</button> 
                 </form>

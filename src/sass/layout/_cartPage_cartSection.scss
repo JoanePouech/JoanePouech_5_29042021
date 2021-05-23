@@ -34,6 +34,10 @@
                 border-top: 2px solid $color-secondary-medium;
                 border-bottom: 2px solid $color-secondary-medium;                                
             }
+
+            & td {
+                text-align: center;
+            }
         }
     }
 }
