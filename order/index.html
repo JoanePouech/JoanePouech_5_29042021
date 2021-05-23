@@ -13,7 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
-        <!-- import JS files -->
+
+        <script src="../src/js/orderPage.js" defer></script>
     </head>
 
     <body>
@@ -30,8 +31,8 @@
         <section class="orderSection">
             <div class="orderSection__content">
                 <h1 class="orderSection__content__title base_typo1">Merci !</h1>
-                <p class="orderSection__content__text">Votre commande d'un montant total de <strong>4509 €</strong> est maintenant confirmée.</p>
-                <p class="orderSection__content__text">Votre numéro de commande est le : <strong>3526-5965</strong>.</p>
+                <p class="orderSection__content__text">Votre commande d'un montant total de <strong id="totalPrice">4509 €</strong> est maintenant confirmée.</p>
+                <p class="orderSection__content__text">Votre numéro de commande est le : <strong id="orderId">3526-5965</strong>.</p>
                 <a class="orderSection__content__back" href="../index.html"><button class="components_button">Retour à l'accueil</button></a>
             </div>
         </section>
