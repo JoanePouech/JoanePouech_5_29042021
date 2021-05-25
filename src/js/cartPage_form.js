@@ -5,7 +5,7 @@ const emailRegex = new RegExp ('^[\\w\\-\\.\\+]+\\@[a-zA-Z0-9\\.\\-]+\\.[a-zA-Z0
 let formValidated = false; // Résultat de la validation du formulaire
 let order; // La confirmation de commande complète
 let orderId; // Numéro de commande après validation
-document.addEventListener ('DOMContentLoaded', (event) => {
+document.addEventListener ('DOMContentLoaded', () => {
     submitOrder();
 });
 
@@ -100,19 +100,13 @@ function verifyFormData () {
 
 // FONCTION - Préparation des données de requête POST
 function prepareContactData () {
-
-    let contact1 = new FormData(document.getElementById("form")); // contact1 via FormData
-    console.log(...contact1); // ligne test
-
     let firstName = document.getElementById("firstName").value; 
     let lastName = document.getElementById("lastName").value;
     let address = document.getElementById("address").value;
     let city = document.getElementById("city").value;
     let email = document.getElementById("email").value;
-    let contact2 = new Contact(firstName, lastName, address, city, email); // contact 2 via Classe Contact
-    console.log(contact2); // ligne test
-
-    return contact2;
+    let contact = new Contact(firstName, lastName, address, city, email); 
+    return contact;
 }
 
 // FONCTION - Envoi de la commande et récupération du numéro de commande

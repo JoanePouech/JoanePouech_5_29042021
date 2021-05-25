@@ -1,6 +1,6 @@
 /* Page 2 - Produit */
 
-document.addEventListener ('DOMContentLoaded', (event) => {
+document.addEventListener ('DOMContentLoaded', () => {
     getProductInfos();
     refreshCartCount (); // fichier cartManager.js
     addItemToCart(); // fichier cartManager.js

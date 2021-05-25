@@ -1,6 +1,6 @@
 /* Page 4 - Confirmation de commande */
 
-document.addEventListener ('DOMContentLoaded', (event) => {
+document.addEventListener ('DOMContentLoaded', () => {
     printOrderInfos();
 });
 
@@ -8,7 +8,7 @@ document.addEventListener ('DOMContentLoaded', (event) => {
 function printOrderInfos () {
     // Montant total
     let totalPrice = localStorage.getItem("totalPrice");
-    document.getElementById("totalPrice").innerText = totalPrice;
+    document.getElementById("totalPrice").innerText = `${totalPrice} €`;
     // Numéro de commande
     let orderId = localStorage.getItem("orderId");
     document.getElementById("orderId").innerText = orderId;

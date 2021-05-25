@@ -3,7 +3,7 @@
 let cartTable = []; // tableau des objets CartProduct du panier
 let totalPrice = 0; // Montant total de la commande 
 let cartIds = JSON.parse(localStorage.getItem("cartIds")); // Contenu du panier, récupéré depuis le local Storage
-document.addEventListener ('DOMContentLoaded', (event) => {
+document.addEventListener ('DOMContentLoaded', () => {
     printCart();
 });
 

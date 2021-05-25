@@ -4,7 +4,7 @@
 // FONCTION - Ajouter un élément au panier (sans l'afficher) depuis le bouton "Ajouter au panier" 
 function addItemToCart () {
     for (let element of document.getElementsByClassName("js_cartButton")) {
-        element.addEventListener ('click', function(event) {
+        element.addEventListener ('click', () => {
             let addedItemId = element.parentElement.getAttribute("id");
             let cartIds = localStorage.getItem("cartIds");
             if (cartIds == null) {
