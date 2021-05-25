@@ -27,16 +27,17 @@
                 width: 100%;
                 padding: 1rem 0;
                 display: flex;
-                justify-content: space-between;   
+                justify-content: space-between;  
+                position: relative; 
 
                 & input {
-                    width: 90%;
+                    width: 88%;
                     height: 2.5rem;
                     background-color: $color-secondary-light;
                     border: 1px solid $color-primary-dark;
 
                     @media screen and (max-width: $break-tablet) {
-                        width: 85%;                
+                        width: 83%;           
                     }
 
                     &:focus {
@@ -45,7 +46,7 @@
                     }
 
                     &[class="invalid"] {
-                        background-color: #f705156e;
+                        background-color: #f705153b;
                     }
                 }
             }

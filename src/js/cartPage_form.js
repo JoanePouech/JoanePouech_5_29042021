@@ -1,6 +1,6 @@
 /* Page 3 - Panier ** Gestion du formulaire */
 
-const textRegex = new RegExp ('^[0-9a-zA-Z]+$'); // Expression régulière pour les champs "text"
+const textRegex = new RegExp ("^[0-9A-Za-z\\ \\'\\-\\u00C0-\\u024F]+$"); // Expression régulière pour les champs "text"
 const emailRegex = new RegExp ('^[\\w\\-\\.\\+]+\\@[a-zA-Z0-9\\.\\-]+\\.[a-zA-Z0-9]{2,4}$'); // Expression régulière pour les champs "email"
 let formValidated = false; // Résultat de la validation du formulaire
 let order; // La confirmation de commande complète
@@ -27,60 +27,58 @@ async function submitOrder () {
         event.preventDefault();
         cartIds = JSON.parse(localStorage.getItem("cartIds"));
         // Le panier est vide
-        if (cartIds.length == 0) {
+        if (cartIds == null || cartIds.length == 0) {
             alert("Vous n'avez pas d'article dans votre panier");
         } else {
         // Le panier contient des items
             formValidated = verifyFormData();
-        }
-        // La vérification est bonne
-        if (formValidated) {
-            let contact = prepareContactData();
-            let products = JSON.parse(localStorage.getItem("cartIds"));
-            order = await sendOrder(contact, products);
-            orderId = order.orderId;
-            localStorage.setItem("orderId", orderId);
-            localStorage.setItem("totalPrice", totalPrice);
-            localStorage.removeItem("cartIds");
-            document.getElementById("form").submit();
-        } else {
-        // La vérification a échouée
-            alert("Vos coordonnées ne sont pas correctes");
+            // La vérification est bonne
+            if (formValidated) {
+                let contact = prepareContactData();
+                let products = JSON.parse(localStorage.getItem("cartIds"));
+                order = await sendOrder(contact, products);
+                orderId = order.orderId;
+                localStorage.setItem("orderId", orderId);
+                localStorage.setItem("totalPrice", totalPrice);
+                localStorage.removeItem("cartIds");
+                document.getElementById("form").submit();
+            } else {
+            // La vérification a échouée
+                alert("Vos coordonnées sont incorrectes");
+            }
         }
     });
 };
 
 //FONCTION - Vérifier les valeurs des champs de formulaire au moment de la saisie
-function verifyUserInputs () {
-    for (let input of document.getElementsByTagName('input')) {        
-        input.addEventListener ('blur', () => {            
+function verifyUserInputs () {    
+    for (let input of document.getElementsByTagName('input')) {      
+        input.addEventListener ('blur', () => {        
             if (input.value == "") {
-                input.setCustomValidity("Ce champ est obligatoire");
                 input.setAttribute("class", "invalid");
+                input.nextElementSibling.innerText = "Ce champ est obligatoire";
             } else {
                 if (input.type == "text") {
                     if (!textRegex.test(input.value)) {
-                        input.setCustomValidity("Vous ne devez utiliser que des lettres ou des chiffres");
                         input.setAttribute("class", "invalid");
+                        input.nextElementSibling.innerText = "Vous ne devez utiliser que des lettres ou des chiffres";
                     } else {
                         input.setAttribute("class", "valid");
-                        input.setCustomValidity("");
+                        input.nextElementSibling.innerText = "";
                     }
                 }
                 if (input.type == "email") {
                     if (!emailRegex.test(input.value)) {
-                        input.setCustomValidity("Votre email doit être du format jean.dupont@mail.com");
                         input.setAttribute("class", "invalid");
+                        input.nextElementSibling.innerText = "Votre email doit être du format jean.dupont@mail.com";
                     } else {
                         input.setAttribute("class", "valid");
-                        input.setCustomValidity("");
+                        input.nextElementSibling.innerText = "";
                     } 
                 }                 
-            } 
-            input.reportValidity();   
-        })
-        
-    }
+            }             
+        })        
+    }    
 }
 
 // FONCTION - Vérification des données de formulaire avant envoi

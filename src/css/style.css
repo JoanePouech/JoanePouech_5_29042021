@@ -91,6 +91,15 @@ p, .components_button, li, label, th, td, .base_typo4 {
   border: 1px solid #e48a24;
 }
 
+.components_errorMessage {
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  font-style: italic;
+  color: red;
+  font-size: 1.3rem;
+}
+
 .header {
   width: 100%;
   height: 5rem;
@@ -514,16 +523,17 @@ footer {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .formSection__content__form label input {
-  width: 90%;
+  width: 88%;
   height: 2.5rem;
   background-color: #fef1e6;
   border: 1px solid #463c68;
 }
 @media screen and (max-width: 768px) {
   .formSection__content__form label input {
-    width: 85%;
+    width: 83%;
   }
 }
 .formSection__content__form label input:focus {
@@ -531,7 +541,7 @@ footer {
   border: none;
 }
 .formSection__content__form label input[class=invalid] {
-  background-color: #f705156e;
+  background-color: #f705153b;
 }
 .formSection__content__form button {
   margin: 2rem 0;

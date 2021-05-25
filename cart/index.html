@@ -62,22 +62,27 @@
                     <label for="firstName">
                         Prénom
                         <input name="firstName" id="firstName" type="text" required autocomplete="off">
+                        <span class="components_errorMessage"></span>
                     </label>
                     <label for="lastName">
                         Nom
-                        <input name="lastName" id="lastName" type="text" autocomplete="off"> 
+                        <input name="lastName" id="lastName" type="text" required autocomplete="off">
+                        <span class="components_errorMessage"></span> 
                     </label>                    
                     <label for="address">
                         Adresse
-                        <input name="address" id="address" type="text" autocomplete="off">
+                        <input name="address" id="address" type="text" required autocomplete="off">
+                        <span class="components_errorMessage"></span>
                     </label>                    
                     <label for="city">
                         Ville
-                        <input name="city" id="city" type="text" autocomplete="off">
+                        <input name="city" id="city" type="text" required autocomplete="off">
+                        <span class="components_errorMessage"></span>
                     </label>                    
                     <label for="email">
                         Email
-                        <input name="email" id="email" type="email" autocomplete="off">
+                        <input name="email" id="email" type="email" required autocomplete="off">
+                        <span class="components_errorMessage"></span>
                     </label>                    
                     <button class="components_button" id="sendButton">Commander</button> 
                 </form>
