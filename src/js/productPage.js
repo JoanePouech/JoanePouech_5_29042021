@@ -6,7 +6,7 @@ document.addEventListener ('DOMContentLoaded', () => {
     addItemToCart(); // fichier cartManager.js
 });
 
-// FONCTION - Récupérer les infos de l'item à afficher (nom, description, image, prix, options de personnalisation)
+// FONCTION PRINCIPALE - Récupérer les infos de l'item à afficher (nom, description, image, prix, options de personnalisation)
 function getProductInfos () {
     const productId = window.location.search.substring(1);
     fetch (host + "/" + productId)

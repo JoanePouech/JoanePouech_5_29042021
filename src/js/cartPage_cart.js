@@ -17,7 +17,7 @@ class CartProduct {
     }
 };
 
-// FONCTION - Afficher le contenu du panier sur la page
+// FONCTION PRINCIPALE - Afficher le contenu du panier sur la page
 async function printCart () {
     // Le panier est vide
     if (cartIds == null || cartIds.length == 0) {

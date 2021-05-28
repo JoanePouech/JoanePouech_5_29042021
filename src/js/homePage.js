@@ -4,7 +4,7 @@ document.addEventListener ('DOMContentLoaded', () => {
     start();
 });
 
-// FONCTION - Lancer l'éxécution et attendre le résultat de createThumbnails() avant de lancer addItemToCart()
+// FONCTION PRINCIPALE - Lancer l'éxécution et attendre le résultat de createThumbnails() avant de lancer addItemToCart()
 async function start () {
     await createThumbnails ();
     refreshCartCount (); // fichier cartManager.js

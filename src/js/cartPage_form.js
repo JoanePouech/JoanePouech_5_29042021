@@ -20,7 +20,7 @@ class Contact {
     }
 };
 
-// FONCTION - Soumission des données de formulaire
+// FONCTION PRINCIPALE - Soumission des données de formulaire
 async function submitOrder () {
     verifyUserInputs();
     document.getElementById("form").addEventListener ('submit', async (event) => {
