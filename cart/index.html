@@ -11,7 +11,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-        <!-- <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script> -->
+        <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../src/css/style.css">
         
         <script src="../src/js/configUrl.js" defer></script>
@@ -61,27 +61,27 @@
                 <form class="formSection__content__form" id="form" action="../order/index.html">
                     <label for="firstName">
                         Prénom
-                        <input name="firstName" id="firstName" type="text" required autocomplete="off">
+                        <input name="firstName" id="firstName" type="text" required pattern="[\w '\-\u00C0-\u024F]+" autocomplete="off">
                         <span class="components_errorMessage"></span>
                     </label>
                     <label for="lastName">
                         Nom
-                        <input name="lastName" id="lastName" type="text" required autocomplete="off">
+                        <input name="lastName" id="lastName" type="text" required pattern="[\w '\-\u00C0-\u024F]+" autocomplete="off">
                         <span class="components_errorMessage"></span> 
                     </label>                    
                     <label for="address">
                         Adresse
-                        <input name="address" id="address" type="text" required autocomplete="off">
+                        <input name="address" id="address" type="text" required pattern="[\w '\-\u00C0-\u024F]+" autocomplete="off">
                         <span class="components_errorMessage"></span>
                     </label>                    
                     <label for="city">
                         Ville
-                        <input name="city" id="city" type="text" required autocomplete="off">
+                        <input name="city" id="city" type="text" required pattern="[\w '\-\u00C0-\u024F]+" autocomplete="off">
                         <span class="components_errorMessage"></span>
                     </label>                    
                     <label for="email">
                         Email
-                        <input name="email" id="email" type="email" required autocomplete="off">
+                        <input name="email" id="email" type="email" required pattern="[\w\-\.\+]+@[\w\.\-]+\.[\w]{2,4}" autocomplete="off">
                         <span class="components_errorMessage"></span>
                     </label>                    
                     <button class="components_button" id="sendButton">Commander</button> 

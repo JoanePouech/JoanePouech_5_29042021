@@ -1,7 +1,7 @@
 /* Page 3 - Panier ** Gestion du formulaire */
 
-const textRegex = new RegExp ("^[0-9A-Za-z\\ \\'\\-\\u00C0-\\u024F]+$"); // Expression régulière pour les champs "text"
-const emailRegex = new RegExp ('^[\\w\\-\\.\\+]+\\@[a-zA-Z0-9\\.\\-]+\\.[a-zA-Z0-9]{2,4}$'); // Expression régulière pour les champs "email"
+const textRegex = new RegExp ("^[\\w\\ \\'\\-\\u00C0-\\u024F]+$"); // Expression régulière pour les champs "text"
+const emailRegex = new RegExp ('^[\\w\\-\\.\\+]+\\@[\\w\\.\\-]+\\.[\\w]{2,4}$'); // Expression régulière pour les champs "email"
 let formValidated = false; // Résultat de la validation du formulaire
 let order; // La confirmation de commande complète
 let orderId; // Numéro de commande après validation
