@@ -8,7 +8,8 @@ document.addEventListener ('DOMContentLoaded', () => {
 
 // FONCTION PRINCIPALE - Récupérer les infos de l'item à afficher (nom, description, image, prix, options de personnalisation)
 function getProductInfos () {
-    const productId = window.location.search.substring(1);
+    const url = new URL (window.location.href);
+    const productId = url.searchParams.get("id");
     fetch (host + "/" + productId)
         .then ((result) => {
             if (result.ok) {

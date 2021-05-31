@@ -28,7 +28,7 @@ function createThumbnails () {
                             <img class="productsSection__content__list__thumbnail__content--image" src="${allItems[i].imageUrl}" alt="meuble ${parseInt(i)+1}">
                             <div class="productsSection__content__list__thumbnail__content--actions" id="${allItems[i]._id}"> 
                                 <p>Prix: ${allItems[i].price} €</p>
-                                <a class="components_button" href="./product/index.html?${allItems[i]._id}">Détails</a> 
+                                <a class="components_button" href="./product/index.html?id=${allItems[i]._id}">Détails</a> 
                                 <button class="components_button js_cartButton">Ajouter au panier</button>
                             </div>
                         </div>
