@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="robots" content="index,follow">
+
+        <title>Orifurniture | Détail</title>
+        <meta name="description" content="détail du produit">
+        <link rel="shortcut icon" type="image/png" href="../assets/img/Logo_Orinoco.png">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c21309d9dc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../src/css/style.css">
+
+        <script src="../src/js/configUrl.js" defer></script>
+        <script src="../src/js/cartManager.js" defer></script>
+        <script src="../src/js/productPage.js" defer></script>
+    </head>
+
+    <body>
+
+        <header class="header dark_header">
+            <div class="header__content">
+                <a href="../index.html" class="header__content__logo">
+                    <img src="../assets/img/Logo_Orinoco.png" alt="Logo_Orinoco">
+                    <p class="base_typoLogo">Orifurniture</p>
+                </a>
+                <a href="../cart/index.html" class="header__content__cart"> 
+                    <p class="base_typo3">Panier</p>
+                    <i class="fas fa-shopping-basket"></i>
+                    <p class="base_typo3" id="cartCount">0</p>
+                </a>
+            </div>
+        </header>
+
+        <section class="detailsSection">
+            <div class="detailsSection__content">
+                <a class="detailsSection__content__back base_typo4" href="../index.html"><i class="fas fa-chevron-left"></i>Retour à la liste des articles</a>
+                <h1 class="detailsSection__content__title base_typo2" id="productName">Nom du meuble</h1>
+                <div class="detailsSection__content__item">
+                    <div class="detailsSection__content__item__image">
+                        <img id="productImage" src="#" alt="détail du meuble">
+                    </div>                    
+                    <div class="detailsSection__content__item__infos" id="productId">
+                        <p id="productPrice">89900 €</p>
+                        <p id="productDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="detailsSection__content__item__infos__varnish">
+                            <label for="productOptions">Vernis disponibles</label>
+                            <select name="#" id="productOptions"></select>
+                        </div>                        
+                        <button class="components_button js_cartButton">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer__content">
+                <div class="footer__content__column">
+                    <h2>Questions</h2>
+                    <ul>
+                        <li>A propos</li>
+                        <li>FAQ</li>
+                        <li>Conditions générales de vente</li>
+                    </ul>
+                </div>   
+                <div class="footer__content__column"> 
+                    <h2>Contactez-nous</h2>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i>Tel: 01.23.45.67.89</li>
+                        <li><i class="fas fa-envelope"></i>contact@fakemail.com</li>
+                    </ul>
+                </div>
+                <div class="footer__content__column">
+                    <h2>Réseaux sociaux</h2>
+                    <ul>
+                        <li>Facebook<i class="fab fa-facebook-f"></i></li>
+                        <li>Twitter<i class="fab fa-twitter"></i></li>
+                        <li>Instagram<i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+</html>

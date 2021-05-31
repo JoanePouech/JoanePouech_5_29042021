@@ -1,0 +1,21 @@
+.components_button {
+    width: 15rem;
+    height: 5rem;
+    color: $color-secondary-light;
+    background-color: $color-primary-dark;
+    border: 2px solid $color-secondary-medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    @media screen and (max-width: $break-smartphone) {
+        width: 10rem;
+    }
+
+    &:hover {
+        color: $color-primary-dark;
+        background-color: $color-secondary-medium;
+        cursor: pointer;
+    }
+}

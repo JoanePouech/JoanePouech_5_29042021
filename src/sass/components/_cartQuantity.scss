@@ -1,0 +1,13 @@
+.components_cartQuantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_signs {
+        padding: 0.5rem;
+        margin: 1rem;
+        color: $color-secondary-light;
+        background-color: $color-primary-dark;
+        border: 1px solid $color-secondary-medium;
+    }
+}

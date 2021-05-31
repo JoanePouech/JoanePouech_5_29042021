@@ -1,0 +1,48 @@
+h1 {
+    font-family: "Finger Paint";
+    font-size: 6rem;
+
+    @media screen and (max-width: $break-smartphone) {
+        font-size: 4.7rem;
+    }
+}
+
+h2, .base_typo2 {
+    font-family: "Finger Paint";
+    font-size: 3rem;
+}
+
+h3, .base_typo3 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+p, .components_button, li, label, th, td, .base_typo4 {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.base_typoSubtitle {
+    font-family: "Lato";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+
+    @media screen and (max-width: $break-smartphone) {
+        font-size: 1.5rem;
+    }
+}
+
+.base_typoLogo {
+    font-family: "Finger Paint";
+    font-size: 2rem;
+}
+
+.fab, .fas {
+    padding: 0 0.5rem;
+}
+
+
+

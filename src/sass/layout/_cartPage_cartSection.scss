@@ -1,0 +1,43 @@
+.cartSection {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $color-primary-light;
+
+    &__content {
+        @include contentSize;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            color: $color-primary-dark;
+            padding: 2rem 0 ;
+        }
+
+        &__table {
+            width: 80%;
+            color: $color-primary-dark;
+            align-self: center;
+            border-collapse: collapse;
+
+            @media screen and (max-width: $break-tablet) {
+                width: 100%;
+            }
+
+            & thead, tfoot {
+                color: $color-secondary-light;
+                background-color: $color-primary-dark;
+            }
+
+            & tr {
+                width: 80%;
+                height: 5rem;
+                border-top: 2px solid $color-secondary-medium;
+                border-bottom: 2px solid $color-secondary-medium;                                
+            }
+
+            & td {
+                text-align: center;
+            }
+        }
+    }
+}
