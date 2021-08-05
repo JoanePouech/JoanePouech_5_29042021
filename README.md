@@ -1,10 +1,15 @@
-# JoanePouech_5_29042021
+## Projet 5 - Formation Développeur Web - OpenClassrooms
+## Construisez un site e-commerce
 
-## Utilisation en ligne
+### Contexte du projet
+Réaliser la partie front-end d'un site marchand depuis zéro (pas de maquettes fournies).
+Le dossier back-end est fourni.
+
+### Utilisation en ligne
 Le site est disponible à l'adresse https://joanepouech.github.io/JoanePouech_5_29042021/ et entièrement fonctionnel.
 Le server est hébergé sur GitHub dans un répertoire indépendant et simulé en ligne par une application Heroku.
 
-## Utilisation en local
+### Utilisation en local
 Instructions
 1. Télecharger le dossier GitHub sur votre ordinateur.
 2. Dans le dossier, lancer la commande "npm install".
