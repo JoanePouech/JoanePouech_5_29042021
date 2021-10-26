@@ -1,4 +1,4 @@
-## Projet 5 - Formation Développeur Web - OpenClassrooms
+## Projet 4 - Formation Développeur Web - OpenClassrooms
 ## Construisez un site e-commerce
 
 ### Contexte du projet
@@ -6,7 +6,7 @@ Réaliser la partie front-end d'un site marchand depuis zéro (pas de maquettes 
 Le dossier back-end est fourni.
 
 ### Utilisation en ligne
-Le site est disponible à l'adresse https://joanepouech.github.io/JoanePouech_5_29042021/ et entièrement fonctionnel.
+Le site est disponible à l'adresse https://joanepouech.github.io/OpenClassrooms_DevWeb_Projet_4/ et entièrement fonctionnel.
 Le server est hébergé sur GitHub dans un répertoire indépendant et simulé en ligne par une application Heroku.
 
 ### Utilisation en local
